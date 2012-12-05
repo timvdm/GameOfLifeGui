@@ -1,0 +1,34 @@
+Compliling Instructions
+=======================
+
+In the gameoflifegui.cpp file, change the color/setColor functions to work with
+your GameOfLife class. Search for MODIFY in the file.
+
+1) Install qt
+
+$ sudo apt-get install libqt4-dev
+
+2) Compiling
+
+$ cd GameOfLifeGui
+$ mkdir build
+$ cd build
+$ qmake ..
+$ make
+
+3) Running
+
+$ ./GameOfLifeGui
+
+Generating Boards
+=================
+
+Compile the genboard.cpp file:
+
+$ g++ genboard.cpp -o genboard
+
+Run the genboard program
+
+$ genboard
+Usage: ./genboard <filename> <rows> <columns>
+$ genboard board50x50.txt 50 50
